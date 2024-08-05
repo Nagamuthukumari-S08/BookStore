@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+      font-family: "Roboto", sans-serif;
+    
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #8faec7;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(181, 118, 118, 0.1);
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
+  background-color: rgb(76, 98, 104);
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 300px;
+  height: 400px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav">
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ebooks.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+              </ul>
+        </div>
+    </nav>
+
+<div class="about-section">
+  <h1>About Us </h1>
+  <p>Book Zone provides easy interface to its customer for purchasing books online.</p>
+  <p>For any query leave a comment in the Home page comment section. You can also send us email and call us 
+      on Week days. 
+      <br>Thankyou for your patience and hope you had a great shopping here.
+  </p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <center><img src="publisher/p1.png" alt="Jane" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Vidhya</h2>
+        <p class="title">CEO & Founder</p>
+        <p>“Be yourself; everyone else is already taken.”</p>
+        <p>himanshi@example.com</p>
+        <p><a href="contact.html"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <center><img src="publisher/p2.png" alt="Jane" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Nirav</h2>
+        <p class="title">Art Director</p>
+        <p>“Reading is a conversation.All books talks,but the good book listen as well”</p>
+        <p>Abc@example.com</p>
+        <p><a href="contact.html"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <center><img src="publisher/p3.png" alt="Jane" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Bala</h2>
+        <p class="title">Designer</p>
+        <p>“A room without books is like a body without a soul.”</p>
+        <p>xyz@example.com</p>
+        <p><a href="contact.html"><button class ="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

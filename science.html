@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Books Lover | Ebookstore</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        background-color: rgb(232, 200, 118);
+      }
+
+      .column {
+        text-align: center;
+        width: 33.33%;
+        padding: 10px;
+        height: 350px;
+      }
+
+      .row {
+        column-gap: 10px;
+        content: "";
+        display: flex;
+      }
+    </style>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2>SCIENCE</h2>
+      <div class="icon-cart">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 18 20"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
+          />
+        </svg>
+        <span>0</span>
+      </div>
+    </div>
+
+    <div class="cartTab">
+      <h3>Shopping Cart</h3>
+      <div class="cartItems"></div>
+      <button class="close">CLOSE</button>
+    </div>
+
+    <br />
+    <br />
+    <div class="row">
+      <div
+        class="column"
+        data-id="9"
+        data-name="The Nature of the science"
+        data-price="500"
+        data-image="science/s1.png"
+      >
+        <img src="science/s1.png" alt="Book 1" />
+        <h4>The Nature of the science</h4>
+        <p>Rs.500</p>
+      </div>
+
+      <div
+        class="column"
+        data-id="10"
+        data-name="New Science of Everything"
+        data-price="500"
+        data-image="science/s2.png"
+      >
+        <img src="science/s2.png" alt="Book 2" />
+        <h4>New Science of Everything</h4>
+        <p>Rs.500</p>
+      </div>
+
+      <div
+        class="column"
+        data-id="11"
+        data-name="The Big Book of Science"
+        data-price="500"
+        data-image="science/s3.png"
+      >
+        <img src="science/s3.png" alt="Book 3" />
+        <h4>The Big Book of Science</h4>
+        <p>Rs.500</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div
+        class="column"
+        data-id="12"
+        data-name="Science Encyclopedia"
+        data-price="500"
+        data-image="science/s4.pn"
+      >
+        <img src="science/s4.png" alt="Book 4" />
+        <h4>Science Encyclopedia</h4>
+        <p>Rs.500</p>
+      </div>
+
+      <div
+        class="column"
+        data-id="13"
+        data-name="Primary Science Book"
+        data-price="500"
+        data-image="science/s5.png"
+      >
+        <img src="science/s5.png" alt="Book 5" />
+        <h4>Primary Science Book</h4>
+        <p>Rs.500</p>
+      </div>
+
+      <div
+        class="column"
+        data-id="14"
+        data-name="Science and Technology"
+        data-price="500"
+        data-image="science/s6.png"
+      >
+        <img src="science/s6.png" alt="Book 6" />
+        <h4>Science and Technology</h4>
+        <p>Rs.500</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div
+        class="column"
+        data-id="15"
+        data-name="The Best Science of the year"
+        data-price="500"
+        data-image="science/s7.png"
+      >
+        <img src="science/s7.png" alt="Book 7" />
+        <h4>The Best Science of the year</h4>
+        <p>Rs.500</p>
+      </div>
+
+      <div
+        class="column"
+        data-id="16"
+        data-name="Data Science"
+        data-price="500"
+        data-image="science/s8.png"
+      >
+        <img src="science/s8.png" alt="Book 8" />
+        <h4>Data Science</h4>
+        <p>Rs.500</p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

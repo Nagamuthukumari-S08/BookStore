@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #353562;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(216, 157, 157, 0.1);
+        z-index: 1000;
+      }
+
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .navbar li {
+        margin: 0;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(76, 98, 104);
+      }
+      .contact-container {
+        display: flex;
+        width: 100%;
+        max-width: 1000px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .contact-left,
+      .contact-right {
+        padding: 40px;
+      }
+
+      .contact-left {
+        width: 45%;
+        background-color: #353562;
+        color: white;
+      }
+
+      .contact-right {
+        width: 55%;
+      }
+
+      .contact-left h2,
+      .contact-right h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .contact-left p {
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .icon {
+        font-size: 24px;
+        margin-right: 15px;
+      }
+
+      .contact-right form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-right label {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      .contact-right input,
+      .contact-right textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .contact-right button {
+        padding: 10px;
+        border: none;
+        background-color: #353562;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .contact-right button:hover {
+        background-color: #2a2a59;
+      }
+      .contact-container {
+        display: flex;
+        width: 100%;
+        max-width: 1000px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-top: 100px; /* Adjust this value as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav">
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ebooks.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </div>
+    </nav>
+    <br /><br />
+    <div class="contact-container">
+      <div class="contact-left">
+        <h2>Contact Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non
+          urna eu eros pharetra.
+        </p>
+        <div class="contact-info">
+          <i class="fa-sharp fa-solid fa-location-dot icon"></i>
+          <div>New Company, 1212 1st Floor, Street, Delhi, India</div>
+        </div>
+        <div class="contact-info">
+          <i class="fa-solid fa-phone icon"></i>
+          <div>+91 004-054-05656</div>
+        </div>
+        <div class="contact-info">
+          <i class="fa-solid fa-envelope icon"></i>
+          <div>yoursite@gmail.com</div>
+        </div>
+        <div class="contact-info">
+          <i class="fa-sharp fa-solid fa-globe icon"></i>
+          <div>www.yoursite.com</div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <h2>Get In Touch</h2>
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/1165876da6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Form submitted!");
+          // You can add more form submission logic here, e.g., sending data to a server
+        });
+    </script>
+  </body>
+</html>

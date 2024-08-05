@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    justify-content: center; /* Center the h2 element */
+    align-items: center;
+    padding: 20px;
+   
+    position: relative;
+  }
+  
+  .header h2 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .icon-cart {
+    position: absolute;
+    right: 20px; /* Adjust to position the cart icon at the left corner */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .icon-cart svg {
+    width: 30px;
+  }
+  
+  .icon-cart span {
+    position: absolute;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: -5px;
+    right: -10px;
+    font-size: 12px;
+  }
+  
+  .cartTab {
+    width: 300px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: 1000;
+    padding: 10px;
+  }
+  
+  body.showCart .cartTab {
+    right: 0;
+  }
+  

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+          
+        }
+        body
+        {
+          background-color: #e7b0b0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #7a5757;
+            box-shadow: 0 2px 5px rgba(181, 118, 118, 0.1);
+            width: 100%;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(76, 98, 104);
+        }
+
+        .column {
+            text-align: center;
+            width: 33.33%;
+            padding: 10px;
+            height: 300px; /* Should be removed. Only for demonstration. */
+        }
+
+        .row {
+            display: flex;
+            column-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul id="MenuItems">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ebooks.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="account.html">Account</a></li>
+    </ul>
+  </nav>
+  <h1 style="text-align: center; font-size: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+      Books Available
+  </h1>
+
+    <div class="row">
+        <div class="column">
+            <img src="images/sciencef1.png">
+            <h2><a href="science.html">Science</a></h2>
+        </div>
+        <div class="column">
+            <img src="images/literaturef1.png" style="width: 150px;height: 250px;">
+            <h2><a href="literature.html">Literature</a></h2>
+        </div>
+        <div class="column">
+            <img src="images/novels.png">
+            <h2><a href="novels.html">Novels</a></h2>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="images/health.png">
+            <h2><a href="health.html">Health & Lifestyle</a></h2>
+        </div>
+        <div class="column">
+            <img src="images/cook.png">
+            <h2><a href="cooking.html">Cooking</a></h2>
+        </div>
+        <div class="column">
+            <img src="images/comic.png">
+            <h2><a href="comics.html">Comics</a></h2>
+        </div>
+    </div>
+    </body>
+    </html>
+  
